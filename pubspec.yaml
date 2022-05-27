@@ -24,7 +24,7 @@ dependencies:
     flutter:
         sdk: flutter
     intl:
-    flutter_svg: ^1.1.0
+    flutter_svg:
     google_mobile_ads: ^1.2.0
     sqflite: ^2.0.0+3
     path_provider: ^2.0.1
