@@ -4,6 +4,7 @@
         android:label="eBook"
         android:icon="@drawable/ic_launcher">
         <activity
+            android:exported="true"
             android:name=".MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"

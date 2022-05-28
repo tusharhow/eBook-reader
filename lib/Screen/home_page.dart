@@ -630,7 +630,29 @@ class MyHomePage extends State<Mainpage> {
               mainHeading(),
               getSliders(),
               threeButtons(),
-              getBooks(),
+
+              Padding(
+                padding: const EdgeInsets.all(13.0),
+                child: Column(
+                    children: [
+                      Container(
+                        height: 90,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: ColorsRes.appColor,
+                        ),
+                      ),
+                      SizedBox(height: 13,),
+                      Container(
+                        height: 90,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: ColorsRes.appColor,
+                        ),
+                      ),
+                    ]
+                ),
+              ),
             ],
           ),
         ),
