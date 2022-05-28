@@ -1,15 +1,21 @@
 import 'package:carousel_pro/carousel_pro.dart';
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_admob/Helper/ColorsRes.dart';
 import 'package:flutter_admob/Helper/String.dart';
 import 'package:flutter_admob/Model/Category.dart';
+import 'package:flutter_admob/Screen/file_picker_dialouge.dart';
+import 'package:flutter_admob/Screen/qr_scanner_screen.dart';
 import 'package:flutter_admob/Screen/search.dart';
 import 'package:flutter_admob/databaseHelper/dbhelper.dart';
 import 'package:flutter_admob/localization/Demo_Localization.dart';
 import 'package:flutter_admob/localization/language_constants.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:launch_review/launch_review.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:share/share.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'TermFeed/About_Us.dart';
 import 'TermFeed/Contact_Us.dart';
 import 'TermFeed/Privacy_Policy.dart';
@@ -237,7 +243,8 @@ class MyHomePage extends State<Mainpage> {
                         ),
                         Expanded(
                           child: Text(
-                            MyAppLocalization.of(context).translate("Share App"),
+                            MyAppLocalization.of(context)
+                                .translate("Share App"),
                             style: TextStyle(
                               color: ColorsRes.white,
                               fontSize: 20,
@@ -513,7 +520,8 @@ class MyHomePage extends State<Mainpage> {
                         ),
                         Expanded(
                           child: Text(
-                            MyAppLocalization.of(context).translate("Share App"),
+                            MyAppLocalization.of(context)
+                                .translate("Share App"),
                             style: TextStyle(
                               color: ColorsRes.white,
                               fontSize: 20,
@@ -630,28 +638,27 @@ class MyHomePage extends State<Mainpage> {
               mainHeading(),
               getSliders(),
               threeButtons(),
-
               Padding(
                 padding: const EdgeInsets.all(13.0),
-                child: Column(
-                    children: [
-                      Container(
-                        height: 90,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: ColorsRes.appColor,
-                        ),
-                      ),
-                      SizedBox(height: 13,),
-                      Container(
-                        height: 90,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: ColorsRes.appColor,
-                        ),
-                      ),
-                    ]
-                ),
+                child: Column(children: [
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: ColorsRes.appColor,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 13,
+                  ),
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: ColorsRes.appColor,
+                    ),
+                  ),
+                ]),
               ),
             ],
           ),
@@ -1040,7 +1047,8 @@ class MyHomePage extends State<Mainpage> {
                         style: TextStyle(color: Colors.white)),
                     value: '0'),
                 PopupMenuItem<String>(
-                    child: Text(MyAppLocalization.of(context).translate("HINDI"),
+                    child: Text(
+                        MyAppLocalization.of(context).translate("HINDI"),
                         style: TextStyle(color: Colors.white)),
                     value: '1'),
                 PopupMenuItem<String>(
@@ -1534,7 +1542,37 @@ class MyHomePage extends State<Mainpage> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () async {
+          var result = await showDialog(
+            context: context,
+            builder: (context) {
+              return FilePickerDialouge();
+            },
+          );
+          if (result == "files") {
+            var file = await FilePicker.platform.pickFiles(
+              type: FileType.custom,
+              allowedExtensions: ['md'],
+            );
+          } else if (result == "qr") {
+            var result = await Navigator.push(
+              context,
+              new MaterialPageRoute(
+                builder: (context) => QrScannerScreen(),
+              ),
+            );
+            if (result != null) {
+              var directory = await getTemporaryDirectory();
+              var filePath = await FlutterDownloader.enqueue(
+                  url: result, savedDir: directory.path);
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text("File Downloaded Successfully"),
+                ),
+              );
+            }
+          }
+        },
         child: Icon(
           Icons.add,
           color: Colors.white,
@@ -1561,8 +1599,8 @@ class MyHomePage extends State<Mainpage> {
     return ccatid;
   }
 
-  setDarkMode(bool dark_mode) async {
+  setDarkMode(bool darkMode) async {
     final SharedPreferences preferences = await SharedPreferences.getInstance();
-    return preferences.setBool("Dark_Mode", dark_mode);
+    return preferences.setBool("Dark_Mode", darkMode);
   }
 }

@@ -4,41 +4,7 @@
             "outputFile": "D:\\Flutter Projects\\ebook-reader\\build\\google_mobile_ads\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hi\\values-hi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\values-hi\\values-hi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "34",
-                        "startColumns": "4",
-                        "startOffsets": "3861",
-                        "endColumns": "100",
-                        "endOffsets": "3957"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\a7dd160065f0b3988204d0d05b5b1c5a\\jetified-play-services-basement-17.6.0\\res\\values-hi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1274",
-                        "endColumns": "204",
-                        "endOffsets": "1474"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\9157fffcaa7bfa40476fc6072fd16d1b\\jetified-play-services-ads-20.6.0\\res\\values-hi\\values.xml",
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\16660ae37c057d307f0da47026a568cc\\jetified-play-services-ads-20.6.0\\res\\values-hi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\922ea0bf8ee19c8576b37da3bc10a817\\jetified-play-services-base-17.6.0\\res\\values-hi\\values.xml",
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "3861",
+                        "endColumns": "100",
+                        "endOffsets": "3957"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\9cf31d8c4a0f02df943871bf8abeda3a\\jetified-play-services-base-17.6.0\\res\\values-hi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,215,407,535,649,859,991,1133,1479,1695,1806,2003,2135,2335,2518,2611,2708",
                         "endColumns": "109,191,127,113,209,131,141,140,215,110,196,131,199,182,92,96,116",
                         "endOffsets": "210,402,530,644,854,986,1128,1269,1690,1801,1998,2130,2330,2513,2606,2703,2820"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\eaaa49b69995116bb7d14894b8132a52\\jetified-play-services-basement-17.6.0\\res\\values-hi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1274",
+                        "endColumns": "204",
+                        "endOffsets": "1474"
                     }
                 }
             ]
@@ -77,41 +77,7 @@
             "outputFile": "D:\\Flutter Projects\\ebook-reader\\build\\google_mobile_ads\\intermediates\\res\\merged\\debug\\values-hi\\values-hi.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\122df2e57d294d1a53db26bbc3b813c1\\core-1.6.0\\res\\values-hi\\values-hi.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "34",
-                        "startColumns": "4",
-                        "startOffsets": "3861",
-                        "endColumns": "100",
-                        "endOffsets": "3957"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\a7dd160065f0b3988204d0d05b5b1c5a\\jetified-play-services-basement-17.6.0\\res\\values-hi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1274",
-                        "endColumns": "204",
-                        "endOffsets": "1474"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\9157fffcaa7bfa40476fc6072fd16d1b\\jetified-play-services-ads-20.6.0\\res\\values-hi\\values.xml",
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\16660ae37c057d307f0da47026a568cc\\jetified-play-services-ads-20.6.0\\res\\values-hi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -128,7 +94,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\922ea0bf8ee19c8576b37da3bc10a817\\jetified-play-services-base-17.6.0\\res\\values-hi\\values.xml",
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\217c4f82bcd3006ae2c69bfed358a4b5\\core-1.6.0\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "3861",
+                        "endColumns": "100",
+                        "endOffsets": "3957"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\9cf31d8c4a0f02df943871bf8abeda3a\\jetified-play-services-base-17.6.0\\res\\values-hi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -142,6 +125,23 @@
                         "startOffsets": "105,215,407,535,649,859,991,1133,1479,1695,1806,2003,2135,2335,2518,2611,2708",
                         "endColumns": "109,191,127,113,209,131,141,140,215,110,196,131,199,182,92,96,116",
                         "endOffsets": "210,402,530,644,854,986,1128,1269,1690,1801,1998,2130,2330,2513,2606,2703,2820"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\mdraf\\.gradle\\caches\\transforms-2\\files-2.1\\eaaa49b69995116bb7d14894b8132a52\\jetified-play-services-basement-17.6.0\\res\\values-hi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1274",
+                        "endColumns": "204",
+                        "endOffsets": "1474"
                     }
                 }
             ]

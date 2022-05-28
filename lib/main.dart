@@ -1,21 +1,28 @@
 import 'package:country_code_picker/country_localizations.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_admob/Helper/String.dart';
+import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
 import 'Screen/Splash/splashScreen.dart';
-import 'Screen/ads/admob_service.dart';
 import 'localization/Demo_Localization.dart';
 import 'localization/language_constants.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
       statusBarIconBrightness: Brightness.light,
       statusBarBrightness: Brightness.light));
+
+  await FlutterDownloader.initialize(
+      debug:
+          true, // optional: set to false to disable printing logs to console (default: true)
+      ignoreSsl:
+          true // option: set to false to disable working with http links (default: false)
+      );
   // await AdmobService.initialize();
   runApp(MyApp());
 }

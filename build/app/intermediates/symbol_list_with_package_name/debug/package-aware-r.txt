@@ -1,4 +1,11 @@
 com.my.ebook
+anim fragment_fast_out_extra_slow_in
+animator fragment_close_enter
+animator fragment_close_exit
+animator fragment_fade_enter
+animator fragment_fade_exit
+animator fragment_open_enter
+animator fragment_open_exit
 attr activityAction
 attr activityName
 attr adSize
@@ -195,6 +202,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id fragment_container_view_tag
 id icon
 id icon_group
 id icon_only
@@ -215,6 +223,7 @@ id right
 id right_icon
 id right_side
 id rtl
+id special_effects_controller_view_tag
 id standard
 id start
 id tag_accessibility_actions
@@ -235,6 +244,10 @@ id text2
 id time
 id title
 id top
+id view_tree_lifecycle_owner
+id view_tree_saved_state_registry_owner
+id view_tree_view_model_store_owner
+id visible_removing_fragment_view_tag
 id wide
 integer google_play_services_version
 integer status_bar_notification_info_maxnum
@@ -247,6 +260,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+raw keep
 string androidx_startup
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
@@ -266,6 +280,14 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string flutter_downloader_notification_canceled
+string flutter_downloader_notification_channel_description
+string flutter_downloader_notification_channel_name
+string flutter_downloader_notification_complete
+string flutter_downloader_notification_failed
+string flutter_downloader_notification_in_progress
+string flutter_downloader_notification_paused
+string flutter_downloader_notification_started
 string offline_notification_text
 string offline_notification_title
 string offline_opt_in_confirm
@@ -301,6 +323,8 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
+styleable Fragment android_name android_id android_tag
+styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
@@ -309,3 +333,4 @@ styleable SplitPairFilter primaryActivityName secondaryActivityAction secondaryA
 styleable SplitPairRule clearTop finishPrimaryWithSecondary finishSecondaryWithPrimary splitLayoutDirection splitMinSmallestWidth splitMinWidth splitRatio
 styleable SplitPlaceholderRule placeholderActivityName splitLayoutDirection splitMinSmallestWidth splitMinWidth splitRatio
 xml flutter_share_file_paths
+xml provider_paths
