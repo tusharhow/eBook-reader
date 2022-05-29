@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/my/ebook/BuildConfig.java
- com.my.ebook.BuildConfig
